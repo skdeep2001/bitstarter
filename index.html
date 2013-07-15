@@ -1,101 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8"/>
-        <title>My First Bitstarter</title>
-        <link type="text/css" rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-2.3.2.css"/>
-        <style type="text/css">
-            body {
-                padding-top: 20px;
-                padding-bottom: 40px;
-            }
-            .container {
-                width: 960px;
-            }
-            p.lead {
-                padding-top: 15px;
-            }
-            .navigation, .pitch, .section1, .section2, .faq, .footer {
-                padding: 10px 0px 10px 0px;
-            }
-            .video, .thermometer, .order, .social {
-                border: 1px dotted;
-                text-align: center;
-            }
-            .video {
-                /* Internal borders have 1px width, thus need to add 4 x 1px to 120px. */
-                height: 124px;
-                line-height: 124px;
-            }
-            .thermometer, .order, .social {
-                /* line-height to vertically center: http://phrogz.net/css/vertical-align/index.html */
-                height: 40px;
-                line-height: 40px;
-            }
-            div.row {
-                border: 1px solid;
-            }            
-        </style>
-    </head>
-    <body>
+  <head>
+    <meta charset="utf-8"/>
+    <title>My First Bitstarter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700' rel='stylesheet' type='text/css'>
+    <style type="text/css">
+        
+      /* Large desktop */
+      @media (min-width: 980px) {
+        body {
+          padding-top: 60px;
+        }
+        .linediv-l {
+          border-right: 1px white solid;
+        }
+        .linediv-r {
+          border-right: 1px white solid;
+        }
+      }
+      
+      /* Landscape phone and down */
+      @media (max-width: 480px) {
+        .copy {
+          padding: 2.5% 10%;
+        }
+        .linediv-l {
+          border-bottom: 1px white solid;
+        }
+        .linediv-r {
+          border-top: 1px white solid;
+        }
+      }
+      
+      /* All form factors */
+      /* Main body and headings */
+      body {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      .heading, .subheading {
+        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+        text-align: center;
+      }
+      p.lead {
+        padding-top: 1.5%;
+        font-size: 24px;
+        line-height: 30px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 24px;
+      }
+    </style>
+  </head>
+  <body>
+  
+    <!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
         <div class="container">
-            <div class="row navigation">
-                <div class="span2 logo">
-                    Logo
-                </div>
-                <div class="span6 blank">
-                    Blank
-                </div>
-                <div class="span4 about">
-                    About
-                </div>
-            </div>
-            <div class="row heading">
-                <div class="span12">
-                    <h1>Bitstarter Title</h1>
-                </div>
-            </div> 
-            <div class="row subheading">
-                <div class="span12">
-                    <p class="lead">This is my first bitstarter project.</p>
-                </div>
-            </div>
-            <div class="row pitch">
-                <div class="span6 video">
-                    Video
-                </div>
-                <div class="span6">
-                    <div class="thermometer">
-                        Thermometer
-                    </div>
-                    <div class="order">
-                        Order
-                    </div>
-                    <div class="social">
-                        Social
-                    </div>
-                </div>
-            </div>
-            <div class="row section1">
-                <div class="span12">
-                    Marketing Section 1
-                </div>
-            </div>
-            <div class="row section2">
-                <div class="span12">
-                    Marketing Section 2
-                </div>
-            </div>
-            <div class="row faq">
-                <div class="span12">
-                    FAQ
-                </div>
-            </div>
-            <div class="row footer">
-                <div class="span12">
-                    Footer
-                </div>
-            </div>
-        </div>    
-    </body>
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#">Project name</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+    
+    <!-- We use row-fluid inside containers to achieve a resizable layout -->
+    <!-- blogs.endjin.com/2013/04/tips-forimplementing-responsive-designs-usingbootstrap -->
+    <!-- http://stackoverflow.com/a/12270322 -->
+    <div class="container">
+      <!-- Font and paired font of .heading/.subheading and body from Google fonts -->
+      <!-- http://www.google.com/fonts/specimen/Ubuntu -->
+      <!-- http://www.google.com/fonts/specimen/Ubuntu#pairings -->
+      <div class="row-fluid heading">
+        <div class="span12">
+          <h1>Product</h1>
+        </div>
+      </div>
+    </div>
+    
+
+  </body>
 </html>
